@@ -1,0 +1,122 @@
+/*Section Display editing*/
+section{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 fit-content;
+    align-items: center;
+}
+
+section h2{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+}
+
+span.value{
+    color: white;
+    font-weight: bold;
+}
+
+/*infoDiv*/
+.infoDiv{
+    width: 100%;
+    max-width: 380px;
+}
+
+.infoDiv *{
+    transition: all 0.5s;
+}
+
+/*head of div*/
+.infoDiv .head{
+    right: 0;
+    top: 0;
+    padding: 0.1em 1.5em;
+    max-width: 290px;
+}
+
+/*body of div*/
+.infoDiv .body{
+    background-color: white;
+    text-align: center;
+    padding: 2vh 2vw;
+    margin: 3% 2vw;
+    outline-offset: 1px;
+    outline-style: dashed;
+    outline-width: 1px;
+    outline-color: rgba(10,10,10,.05);
+    min-height: 50px;
+}
+
+.infoDiv .body.shadow{
+    outline: unset;
+    box-shadow: 0 0 5px 0 rgba(10,10,10,.1);
+    transition: box-shadow 1s;
+}
+
+.infoDiv .body.border{
+    border: 1px solid rgba(10,10,10,.1);
+}
+
+.infoDiv .rounded{
+    border-radius: 5px 0;
+}
+
+/*hover effects*/
+.infoDiv:hover .body{
+    outline-color: rgba(10,10,10,.3);
+}
+
+.infoDiv:hover .body.shadow{
+    box-shadow: 0 0 5px 0 rgba(10,10,10,.3);
+}
+
+.infoDiv:hover .body.border{
+    outline-color: transparent;
+    border-color: rgba(10,10,10,.3);
+}
+
+/*foot of div*/
+.infoDiv .foot{
+    left: 0;
+    bottom: 0;
+    padding: 0.2em;
+    width: 30%;
+    text-align: center;
+    max-width: 20%;
+}
+
+/*style foot*/
+.foot.style-foot .foot-handle{
+    bottom: 35%;
+    left:4%;
+    padding: inherit;
+    transform: rotate(-20deg);
+    z-index: -1;
+    width: inherit;
+    height: 15px;
+}
+
+.foot.style-foot.rounded{
+    border-top-left-radius: 0;
+}
+
+/*style head*/
+.head.style-head .head-handle{
+    top: 54%;
+    right: .8%;
+    padding: inherit;
+    transform: rotate(-20deg);
+    z-index: -1;
+    width: inherit;
+    height: 15px;
+}
+
+.head.style-head.rounded{
+    border-bottom-right-radius: 0;
+}
