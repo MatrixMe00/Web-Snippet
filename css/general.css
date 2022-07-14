@@ -108,6 +108,22 @@
     flex-wrap: wrap;
 }
 
+.flex-center-content{
+    justify-content: center;
+}
+
+.flex-content-end{
+    justify-content: flex-end;
+}
+
+.flex-align-center{
+    align-items: center;
+}
+
+.flex-align-end{
+    align-items: flex-end;
+}
+
 .absolute{
     position: absolute;
 }

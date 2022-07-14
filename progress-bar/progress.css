@@ -1,0 +1,126 @@
+section{
+    flex: 1 1 320px;
+    margin: 10px;
+    align-self: flex-end;
+}
+
+.prog-cont{
+    padding: 0.3em;
+}
+
+.prog-cont.def{
+    width: 100% !important;
+}
+
+.prog-cont.def.sm{
+    height: 1em;
+}
+
+.prog-cont.def.med{
+    height: 1.5em;
+}
+
+.prog-cont.def.lg{
+    height: 2em;
+}
+
+.prog-cont.sm{
+    width: 80px;
+    height: 80px;
+}
+
+.prog-cont.med{
+    width: 120px;
+    height: 120px;
+}
+
+.prog-cont.lg{
+    width: 160px;
+    height: 160px;
+}
+
+.prog-cont.custom{
+    width: var(--s);
+    height: var(--s);
+}
+
+.prog-cont .shadow{
+    box-shadow: 0 0 3px lightgrey;
+    transition: all 0.5s;
+}
+
+.prog-cont .shadow:hover{
+    box-shadow: 0 0 5px grey;
+}
+
+.prog-cont .bg{
+    border: 1px solid lightgrey;
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    background-image: conic-gradient(var(--color) var(--percent), var(--background) 0);
+}
+
+.prog-cont .invert{
+    background-image: conic-gradient(var(--background) var(--percent), var(--color) 0);
+}
+
+.prog-cont .circle{
+    border-radius: 50%;
+}
+
+.prog-cont .semi-round{
+    border-radius: 25%;
+}
+
+.prog-cont .circle.shadow,
+.prog-cont .circle.shadow:hover{
+    border-color: transparent;
+}
+
+.prog-cont .bg{
+    border-color: grey;
+}
+
+.prog-cont .inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: inherit;
+    width: 80%;
+    height: 80%;
+    border: 1px solid lightgrey;
+}
+
+.def .inner{
+    background-color: var(--color);
+    width: var(--percent);
+    justify-self: flex-start;
+    font-size: 0.8em;
+    color: auto;
+}
+
+.def .curve .inner{
+    border-top-right-radius: 2em;
+    border-bottom-right-radius: 2em;
+}
+
+.def.def-curve .bg{
+    border-radius: 2em;
+    padding: 0 0.1em;
+}
+
+.def.def-curve .bg .inner{
+    border-top-right-radius: unset;
+    border-bottom-right-radius: unset;
+}
+
+.def .bg{
+    background-image: unset;
+    background-color: var(--background) !important;
+    justify-content: flex-start;
+    width: inherit;
+}
